@@ -6,6 +6,9 @@
     http://www.restapitutorial.com/
     http://rest.elkstein.org/ (older blog)
 
+##  Restler 3.0 for PHP
+
+    http://www.luracast.com/products/restler
 
 ##  Slim - a micro framework for PHP
 

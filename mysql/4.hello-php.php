@@ -1,5 +1,5 @@
 <?php
-    $the_end_of_the_world = false ;
+    $the_end_of_the_world = true ;
     
     if ($the_end_of_the_world)
     {
