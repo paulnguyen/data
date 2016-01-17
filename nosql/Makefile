@@ -5,7 +5,7 @@ clean:
 	rm build/*.class
 	rm *.db
 
-aspect:
+aspects:
 	ajc -1.5 -inpath lib/jakarta-poi.jar:lib/junit.jar:lib/log4j.jar -sourceroots src -d build
 
 java:

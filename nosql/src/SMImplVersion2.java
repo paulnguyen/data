@@ -55,15 +55,15 @@ public class SMImplVersion2 implements SM {
        tbl.get( guid, 0, Volume.RECORD_GUID_SIZE ) ;
        tbl.get( recid, 0, Volume.RECORD_ID_SIZE ) ;
        if (DEBUG) {
-          //System.out.println( "Looking for: " + findstr ) ;
-          //System.out.println( "Entry Value: " + Util.toHexString(guid) ) ;
+          System.out.println( "Looking for: " + findstr ) ;
+          System.out.println( "Entry Value: " + Util.toHexString(guid) ) ;
        }
        if ( findstr.equals(Util.toHexString(guid)) ) {
           return recid ;
        }
     }  
-    //if (DEBUG)
-    //  System.out.println( "Entry Not Found!  Return NULL" ) ;
+    if (DEBUG)
+      System.out.println( "Entry Not Found!  Return NULL" ) ;
     return null ;
   }
   
@@ -147,7 +147,6 @@ public class SMImplVersion2 implements SM {
     // mount the bootstrap volume
     master_volume = new Volume(0,"master.db",2,10); // only need two pages, max of 10 pages
     data_volume = new Volume(1,"data.db",50,200);
-    //data_volume = new Volume(1,"D:\\data.db",150,300);
     index_volume = new Volume(2,"index.db",10,50);
 
     // create translation table if needed

@@ -9,7 +9,7 @@ public class CMFactory {
 	private static SM cacheManager;
 	public static SM getInstance() {
 		if(cacheManager == null) {
-			synchronized(SMImplVersion1.class) {
+			synchronized(SMImplVersion2.class) {
 				if(cacheManager == null)
 					cacheManager = new CacheManager();
 			}

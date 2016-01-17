@@ -17,7 +17,7 @@ class CacheManager implements SM {
   }
 
 	public CacheManager() {
-		fileStorage = new SMImplVersion5();
+		fileStorage = new SMImplVersion2();
 	}
 	public SM.OID store(SM.Record _rec) throws SM.IOException {
 		return fileStorage.store(_rec);

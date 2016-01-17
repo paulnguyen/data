@@ -3,8 +3,8 @@
 public aspect TracingAspect {
 	private int callDepth;
 
-	pointcut traced() : !within(TracingAspect) && execution(public * *.*(..)) ;
-	//pointcut traced() : !within(TracingAspect) && execution(* *.*(..)) ;
+	//pointcut traced() : !within(TracingAspect) && ( execution(public * SM*.*(..)) || execution(public * Test*.*(..)) ) ;
+	pointcut traced() : !within(TracingAspect) && ( execution(* SM*.*(..)) || execution(* Test*.*(..)) ) ;
 
 	before() : traced() {
 		print("Before", thisJoinPoint);
