@@ -6,10 +6,6 @@
     http://www.restapitutorial.com/
     http://rest.elkstein.org/ (older blog)
 
-##  Restler 3.0 for PHP
-
-    http://www.luracast.com/products/restler
-
 ##  Slim - a micro framework for PHP
 
     http://www.slimframework.com/ 
@@ -19,8 +15,9 @@
 ## Slim REST API
 
     http://www.codediesel.com/php/create-a-quick-rest-api-using-slim-framework/
-    http://php.net/manual/en/ref.pdo-mysql.connection.php
     http://php.net/manual/en/book.pdo.php
+    http://php.net/manual/en/ref.pdo-mysql.connection.php
+    http://www.mustbebuilt.co.uk/php/insert-update-and-delete-with-pdo/
 
 ## Install Commands
 
