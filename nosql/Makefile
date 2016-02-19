@@ -11,7 +11,7 @@ aspects:
 java:
 	ajc -1.5 -inpath lib/jakarta-poi.jar:lib/junit.jar:lib/log4j.jar -d build src/*.java
 	
-run:
+vol:
 	java -cp ./build:lib/aspectjrt.jar Volume
 
 run0:

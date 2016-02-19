@@ -17,7 +17,7 @@ public class SMFactory
 	{
 		if ( s_smImplVersion == null )
 		{
-			synchronized ( SMImplVersion1.class )
+			synchronized ( SMImplVersion2.class )
 			{
 				if ( s_smImplVersion == null )
 				{
