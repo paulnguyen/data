@@ -87,7 +87,6 @@ $app->get('/join', function ($req, $res, $args) {
 });
 
 
-
 $app->get('/', function ($req, $res, $args) {
     $res->withStatus(200);
     $body = $res->getBody();

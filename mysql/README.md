@@ -9,6 +9,7 @@
 ##  Slim - a micro framework for PHP
 
     http://www.slimframework.com/ 
+    https://www.codecademy.com/learn/php
     https://getcomposer.org/
     http://www.sitepoint.com/best-practices-rest-api-scratch-introduction/
     
@@ -18,6 +19,12 @@
     http://php.net/manual/en/book.pdo.php
     http://php.net/manual/en/ref.pdo-mysql.connection.php
     http://www.mustbebuilt.co.uk/php/insert-update-and-delete-with-pdo/
+    
+# Calling REST from Swift
+
+    http://json.org/
+    http://www.raywenderlich.com/120442/swift-json-tutorial
+    
 
 ## Install Commands
 
