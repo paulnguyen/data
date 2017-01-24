@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="MYSQL" id="Project_170ffe1b" template="Default" database="MySql" >
+	<schema name="test" catalogname="test" >
+		<table name="student" >
+			<column name="id" type="bigint" length="19" decimal="0" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="first_name" type="varchar" length="255" decimal="0" jt="12" />
+			<column name="last_name" type="varchar" length="255" decimal="0" jt="12" />
+			<column name="age" type="int" length="10" decimal="0" jt="4" />
+			<index name="pk_customer" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+		</table>
+	</schema>
+	<connector name="MYSQL" database="MySql" driver_class="com.mysql.jdbc.Driver" driver_jar="mysql-connector-java-5.1.40-bin.jar" driver_desc="Standard" host="localhost" port="3306" user="admin" passwd="bXlzcWw=" />
+	<layout name="Default Layout" id="Layout_2f7ad85e" show_relation="columns" >
+		<entity schema="test" name="student" color="bcd5f1" x="48" y="48" />
+		<script name="Sql" id="Query_10a1a993" language="SQL" >
+			<string><![CDATA[CREATE SCHEMA test;
+
+CREATE TABLE test.student ( 
+	id                   bigint  NOT NULL  AUTO_INCREMENT,
+	first_name           varchar(255)    ,
+	last_name            varchar(255)    ,
+	age                  int    ,
+	CONSTRAINT pk_customer PRIMARY KEY ( id )
+ );
+
+]]></string>
+		</script>
+		<script name="Sql_001" id="Query_1d08df1c" language="SQL" >
+			<string><![CDATA[CREATE SCHEMA test;
+
+CREATE TABLE test.customer ( 
+	id                   bigint  NOT NULL  AUTO_INCREMENT,
+	first_name           varchar(255)    ,
+	last_name            varchar(255)    ,
+	CONSTRAINT pk_customer PRIMARY KEY ( id )
+ );
+
+]]></string>
+		</script>
+		<browser id="Browse_1d26a72b" name="Editor_001" confirm_updates="y" >
+			<browse_table schema="test" entity="student" x="10" y="10" width="400" height="346" />
+		</browser>
+	</layout>
+</project>

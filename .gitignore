@@ -1,7 +1,7 @@
 
 # Mac Files
 .DS_Store
-
+*.bak
 *.class
 
 # Mobile Tools for Java (J2ME)
